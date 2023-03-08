@@ -77,9 +77,13 @@ class _Login_With_ValidationState extends State<Login_With_Validation> {
               
               Padding(
                 padding: const EdgeInsets.only(top: 20,bottom: 20),
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: Text('Login')),
+                child: SizedBox(
+                  height: 40,
+                  width: 80,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Text('Login')),
+                ),
               ),
               
               TextButton(
