@@ -53,8 +53,8 @@ class Splashh extends StatelessWidget {
               // ),
               Image.asset(
                 "assets/icons/TommyLizz.png",
-                height: 100,
-                width: 100,
+                height: 200,
+                width: 200,
                 ),
               Text(
                 "My Application Page",
