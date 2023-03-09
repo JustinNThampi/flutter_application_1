@@ -1,25 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/RegisterPage.dart';
+import 'package:flutter_application_1/LoginPageWIthValidation.dart';
 
 import 'HomeScreen.dart';
 
-class Login_With_Validation extends StatefulWidget {
-  const Login_With_Validation({super.key});
+class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key});
 
   @override
-  State<Login_With_Validation> createState() => _Login_With_ValidationState();
+  State<RegisterPage> createState() => _RegisterPageState();
 }
 
-class _Login_With_ValidationState extends State<Login_With_Validation> {
-  
+class _RegisterPageState extends State<RegisterPage> {
+
   GlobalKey<FormState> formkey = GlobalKey();         //for fetching the 
   bool showPass = true;                               //for checking the password is valid or not
+  var confpass;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login Page'),
+        title: Text('Registration page'),
       ),
       body: SingleChildScrollView(
         child: Form(
@@ -87,12 +88,37 @@ class _Login_With_ValidationState extends State<Login_With_Validation> {
                         borderRadius: BorderRadius.circular(100))
                     ),
                     validator: (password){
+                      confpass = password;
                       if(password!.isEmpty || password.length <6){
                         return "enter a valid password";
                       }else{
                         return null;
                       }
                     },
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    validator: (cpass){
+                      if(cpass != confpass.isEmpty || cpass!.isEmpty){
+                        return "Password Missmatch";
+                      }else{
+                        return null;
+                      }
+                    },
+                    obscureText: true,
+                    obscuringCharacter: '*',
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.password),
+                      filled: true,
+                      fillColor: Colors.white,
+                      hintText: 'Confirm Password',
+                      labelText: 'Confirm Password',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(100))
+                    )
                   ),
                 ),
                 
@@ -105,25 +131,16 @@ class _Login_With_ValidationState extends State<Login_With_Validation> {
                       onPressed: () {
                         final valid = formkey.currentState!.validate();
                         if(valid){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Login_With_Validation()));
                         }
                       },
-                      child: Text('Login')),
+                      child: const Text('SignUp')),
                   ),
                 ),
-                
-                TextButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterPage()));
-                  },
-                  child: Text(
-                    'Not a User?? SignUp Here!!',
-                    style: TextStyle(
-                    fontSize: 10),))
-              ],),
+              ],
+            ),
         ),
       ),
     );
   }
-  
 }
