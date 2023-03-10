@@ -1,20 +1,38 @@
+import 'dart:async';
+
 import 'package:device_preview/device_preview.dart';
+import 'package:flutter_application_1/LoginPageWIthValidation.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
 
-void main(){
-  runApp(DevicePreview(
-    builder: (BuildContext context) => MaterialApp(
-      useInheritedMediaQuery: true,
-      home : Splashh(),
-      debugShowCheckedModeBanner: false,
-    ),
-  ));
+// void main(){
+//   runApp(DevicePreview(
+//     builder: (BuildContext context) => MaterialApp(
+//       useInheritedMediaQuery: true,
+//       home : Splashh(),
+//       debugShowCheckedModeBanner: false,
+//     ),
+//   ));
+// }
+
+
+class Splashh extends StatefulWidget {
+
+  @override
+  State<Splashh> createState() => _SplashhState();
 }
 
+class _SplashhState extends State<Splashh> {
 
-class Splashh extends StatelessWidget {
+
+  @override
+  void initState() {
+    super.initState();
+    Timer(Duration(seconds: 3), () {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Login_With_Validation()));
+     });
+  }
 
   @override
   Widget build(BuildContext context) {
