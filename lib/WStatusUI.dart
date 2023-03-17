@@ -1,7 +1,19 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 
-class WChat extends StatelessWidget {
-  const WChat({super.key});
+void main(){
+  runApp(DevicePreview(
+    builder: (BuildContext context) => MaterialApp(
+      useInheritedMediaQuery: true,
+      home: WStatus(),
+      debugShowCheckedModeBanner: false,
+    ),
+  ));
+}
+
+
+class WStatus extends StatelessWidget {
+  const WStatus({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,13 +27,26 @@ class WChat extends StatelessWidget {
       'assets/image/DP5.jpg',
       'assets/image/DP4F.jpg',
       ];
-    var time = ['22:34','10:04','4:56','Yesterday','yesterday'];
-
+    var time = ['22:34','10:04','4:56','3:44','10:33'];
+    var day = ['Today','Today','Yesterday','Today','Yesterday'];
 
     return Scaffold(
-      floatingActionButton: FloatingActionButton(onPressed: () {},
-        child: Icon(Icons.chat,color: Colors.white,),
-        backgroundColor: Color(0xFF00897b),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          FloatingActionButton(onPressed: () {},
+            child: Icon(Icons.edit,color: Colors.white,),
+            backgroundColor: Colors.grey,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 5),
+            child: FloatingActionButton(onPressed: () {},
+              child: Icon(Icons.camera_alt,color: Colors.white,),
+              backgroundColor: Color(0xFF00897b),
+            ),
+          )
+        ]
       ),
       appBar: AppBar(
         backgroundColor: Color(0xFF00897b),
@@ -42,7 +67,17 @@ class WChat extends StatelessWidget {
           children: [
             ListTile(
               tileColor: Color(0xFF00897b),
-              title: Text('CHATS',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+              title: Text('STATUS',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(3, 10, 10, 10),
+              child: ListTile(
+                title: Text('My status',style: TextStyle(fontWeight: FontWeight.bold),),
+                leading: CircleAvatar(
+                  radius: 30,
+                  backgroundColor: Color(0xFF00897b),
+                ),
+              ),
             ),
             Expanded(
               child: ListView(
@@ -51,17 +86,11 @@ class WChat extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(3, 10, 10, 10),
                     child: ListTile(
                       title: Text(name[index], style: TextStyle(fontSize: 20),),
-                      subtitle: Row(
-                        children: [
-                          Icon(Icons.check),
-                          Text('${message[index]}'),
-                        ],
-                      ),
+                      subtitle: Text("${day[index]},${time[index]}"),
                       leading: CircleAvatar(
                         radius: 30,
                         backgroundImage: AssetImage(image[index])
                       ),
-                      trailing: Text(time[index]),
                     ),
                   )
                 ),

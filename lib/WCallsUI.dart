@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
 
-class WChat extends StatelessWidget {
-  const WChat({super.key});
+class WCall extends StatelessWidget {
+  const WCall({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,12 +17,12 @@ class WChat extends StatelessWidget {
       'assets/image/DP5.jpg',
       'assets/image/DP4F.jpg',
       ];
-    var time = ['22:34','10:04','4:56','Yesterday','yesterday'];
-
+    var time = ['22:34 am','10:04 pm','4:56 am','3:44 am','10:33 pm'];
+    var day = ['Today','Today','Yesterday','Today','Yesterday'];
 
     return Scaffold(
       floatingActionButton: FloatingActionButton(onPressed: () {},
-        child: Icon(Icons.chat,color: Colors.white,),
+        child: Icon(Icons.add_call,color: Colors.white,),
         backgroundColor: Color(0xFF00897b),
       ),
       appBar: AppBar(
@@ -42,7 +44,7 @@ class WChat extends StatelessWidget {
           children: [
             ListTile(
               tileColor: Color(0xFF00897b),
-              title: Text('CHATS',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+              title: Text('CALLS',style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
             ),
             Expanded(
               child: ListView(
@@ -51,17 +53,12 @@ class WChat extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(3, 10, 10, 10),
                     child: ListTile(
                       title: Text(name[index], style: TextStyle(fontSize: 20),),
-                      subtitle: Row(
-                        children: [
-                          Icon(Icons.check),
-                          Text('${message[index]}'),
-                        ],
-                      ),
+                      subtitle: Text("${day[index]},${time[index]}"),
                       leading: CircleAvatar(
                         radius: 30,
                         backgroundImage: AssetImage(image[index])
                       ),
-                      trailing: Text(time[index]),
+                      trailing: Icon(Icons.phone,color: Colors.green,),
                     ),
                   )
                 ),

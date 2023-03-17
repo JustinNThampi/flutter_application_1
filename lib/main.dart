@@ -7,6 +7,9 @@ import 'Login_Signup_UI/Splash.dart';
 import 'SplashPage.dart';
 import 'Login_Page.dart';
 import 'LoginPageWIthValidation.dart';
+import 'WCallsUI.dart';
+import 'WChatUI.dart';
+import 'WStatusUI.dart';
 
 void main(){
   runApp(DevicePreview(
@@ -18,7 +21,10 @@ void main(){
       //home : HomeScreen(),
       //home: Splash(),
       //home: Contact(),
-      home: WContact(),
+      //home: WContact(),
+      //home: WChat(),
+      //home: WStatus(),
+      home: WCall(),
       debugShowCheckedModeBanner: false,
     ),
   ));
