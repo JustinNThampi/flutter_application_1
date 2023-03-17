@@ -1,6 +1,15 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
+// void main(){
+//   runApp(DevicePreview(
+//     builder: (BuildContext context) => MaterialApp(
+//       useInheritedMediaQuery: true,
+//       home: Contact(),
+//       debugShowCheckedModeBanner: false,
+//     ),
+//   ));
+// }
 
 class Contact extends StatelessWidget {
   const Contact({super.key});
@@ -9,14 +18,7 @@ class Contact extends StatelessWidget {
   Widget build(BuildContext context) {
 
     var name = ["Jhone", "Charlie", "Sebin","Appu","Shilpa"];
-    // var image = [
-    //   "assets/icons/apple.png",
-    //   "assets/icons/orange.png",
-    //   "assets/icons/banana.png",
-    //   "assets/icons/grape.png",
-    //   "assets/icons/mango.png"
-    // ];
-     var number = [1234567899,9876543211,1928376455,9357318654,9865438762];
+    var number = [1234567899,9876543211,1928376455,9357318654,9865438762];
 
     return Scaffold(
       appBar: AppBar(
@@ -37,7 +39,6 @@ class Contact extends StatelessWidget {
               child: ListTile(
                 title: Text(name[index], style: TextStyle(fontSize: 20),),
                 subtitle: Text('${number[index]}'),
-                //leading: Image.asset(image[index]),
                 leading: CircleAvatar(
                   backgroundColor: Colors.blue,
                   child: Icon(Icons.person,color: Colors.white,),

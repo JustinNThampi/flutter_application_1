@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/ContactUI.dart';
+import 'package:flutter_application_1/WContactUI.dart';
 import 'HomeScreen.dart';
 import 'Login_Signup_UI/Splash.dart';
 import 'SplashPage.dart';
@@ -16,7 +17,8 @@ void main(){
       //home : Login_With_Validation(),
       //home : HomeScreen(),
       //home: Splash(),
-      home: Contact(),
+      //home: Contact(),
+      home: WContact(),
       debugShowCheckedModeBanner: false,
     ),
   ));
