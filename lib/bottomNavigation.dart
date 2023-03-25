@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: BottomBar1(),
-  ));
-}
+// void main() {
+//   runApp(MaterialApp(
+//     home: BottomBar1(),
+//   ));
+// }
 
 class BottomBar1 extends StatefulWidget {
   const BottomBar1({Key? key}) : super(key: key);
@@ -22,7 +22,6 @@ class _BottomBar1State extends State<BottomBar1> {
     Text("Login")
   ];
   int index = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

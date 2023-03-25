@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: List_Separator(),
-  ));
-}
+// void main() {
+//   runApp(MaterialApp(
+//     home: List_Separator(),
+//   ));
+// }
 
 class List_Separator extends StatelessWidget {
   var data = [

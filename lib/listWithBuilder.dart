@@ -5,8 +5,8 @@ class List_Builder extends StatelessWidget {
   var images = [
     "assets/icons/apple.png",
     "assets/icons/orange.png",
-    "assets/icons/bananas.png",
-    "assets/icons/grapes.png",
+    "assets/icons/banana.png",
+    "assets/icons/grape.png",
     "assets/icons/mango.png"
   ];
   var price = [100, 200, 300, 400, 500];
@@ -45,8 +45,8 @@ class List_Builder extends StatelessWidget {
   }
 }
 
-void main() {
-  runApp(MaterialApp(
-    home: List_Builder(),
-  ));
-}
+// void main() {
+//   runApp(MaterialApp(
+//     home: List_Builder(),
+//   ));
+// }

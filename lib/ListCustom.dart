@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: List_Custom(),
-  ));
-}
+// void main() {
+//   runApp(MaterialApp(
+//     home: List_Custom(),
+//   ));
+// }
 
 class List_Custom extends StatelessWidget {
   @override
