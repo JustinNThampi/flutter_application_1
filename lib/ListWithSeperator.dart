@@ -40,7 +40,7 @@ class List_Separator extends StatelessWidget {
         decoration: const BoxDecoration(
             image: DecorationImage(
                 fit: BoxFit.fill,
-                image: AssetImage("assets/images/rain.jpg"
+                image: AssetImage("assets/image/BI3.jpg"
                 ))),
         child: ListView.separated(
             itemBuilder: (ctx, index) {

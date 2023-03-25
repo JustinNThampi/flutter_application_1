@@ -5,6 +5,7 @@ import 'package:flutter_application_1/ListCustom.dart';
 import 'package:flutter_application_1/ListWithSeperator.dart';
 import 'package:flutter_application_1/WhatsAppUI/WContactUI.dart';
 import 'HomeScreen.dart';
+import 'ListUI.dart';
 import 'Login_Signup_UI/Splash.dart';
 import 'SplashPage.dart';
 import 'Login_Page.dart';
@@ -34,7 +35,8 @@ void main(){
       //home: List_Builder(),
       //home: List_Custom(),
       //home: List_Separator(),
-      home: BottomBar1(),
+      //home: BottomBar1(),
+      home: ListUi(),
       debugShowCheckedModeBanner: false,
     ),
   ));
