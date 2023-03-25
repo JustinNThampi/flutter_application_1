@@ -21,12 +21,11 @@ samples, guidance on mobile development, and a full API reference.
   - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/ContactUI.dart
 ![ContactUI](https://user-images.githubusercontent.com/95224442/225706316-21e18fe6-16bc-4a46-b308-44d9498a23de.PNG)
 
+# WhatsApp Clone UI
 
-# WhatsApp Contact UI
+## WhatsApp Contact UI
   - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/WhatsAppUI/WContactUI.dart
 ![WContact](https://user-images.githubusercontent.com/95224442/225841385-97bc59ea-c7c5-4312-a70a-567a60c68a5c.PNG)
-
-# WhatsApp Clone UI
 
 ## WhatsApp Chat Page
   - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/WhatsAppUI/WChatUI.dart
