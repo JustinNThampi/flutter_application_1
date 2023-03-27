@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/ContactUI.dart';
 import 'package:flutter_application_1/ListCustom.dart';
 import 'package:flutter_application_1/ListWithSeperator.dart';
-import 'package:flutter_application_1/WhatsAppUI/WContactUI.dart';
+import 'package:flutter_application_1/WContactUI.dart';
 import 'HomeScreen.dart';
 import 'ListUI.dart';
 import 'Login_Signup_UI/Splash.dart';
@@ -11,9 +11,12 @@ import 'SplashPage.dart';
 import 'Login_Page.dart';
 import 'LoginPageWIthValidation.dart';
 import 'TabBar.dart';
-import 'WhatsAppUI/WCallsUI.dart';
-import 'WhatsAppUI/WChatUI.dart';
-import 'WhatsAppUI/WStatusUI.dart';
+import 'WCallsUI.dart';
+import 'WChatUI.dart';
+import 'WStatusUI.dart';
+import 'WhatsAppUI/WhatsAppChat.dart';
+import 'WhatsAppUI/WhatsAppClone.dart';
+import 'WhatsAppUI/WhatsAppStatus.dart';
 import 'bottomNavigation.dart';
 import 'listWithBuilder.dart';
 
@@ -36,7 +39,10 @@ void main(){
       //home: List_Custom(),
       //home: List_Separator(),
       //home: BottomBar1(),
-      home: ListUi(),
+      //home: ListUi(),
+      home: WhatsAppClone(),
+      //home: WhatsAppChat(),
+      //home: WhatsAppStatus(),
       debugShowCheckedModeBanner: false,
     ),
   ));
