@@ -28,18 +28,18 @@ samples, guidance on mobile development, and a full API reference.
 # WhatsApp Clone UI
 
 ## WhatsApp Contact UI
-  - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/WhatsAppUI/WContactUI.dart
+  - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/WContactUI.dart
 ![WContact](https://user-images.githubusercontent.com/95224442/225841385-97bc59ea-c7c5-4312-a70a-567a60c68a5c.PNG)
 
 ## WhatsApp Chat Page
-  - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/WhatsAppUI/WChatUI.dart
+  - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/WChatUI.dart
   ![WChat](https://user-images.githubusercontent.com/95224442/225905514-513bf5ba-b16e-4619-8aee-2048516f9bc1.PNG)
 
 ## WhatsApp Status Page
-  - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/WhatsAppUI/WStatusUI.dart
+  - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/WStatusUI.dart
   ![WStatus](https://user-images.githubusercontent.com/95224442/225905772-2bcc3ecf-f2cc-44de-9c72-461151ce9e97.PNG)
 
 ## WhatsApp Calls Page
-  - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/WhatsAppUI/WCallsUI.dart
+  - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/WCallsUI.dart
   ![WCalla](https://user-images.githubusercontent.com/95224442/225905991-25858f1b-e716-4c3f-918c-f39b6bb1f568.PNG)
 
