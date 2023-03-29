@@ -27,15 +27,37 @@ class WhatsAppClone extends StatelessWidget {
             ],
           ),
           actions: [
+            Icon(Icons.camera_alt_rounded),
             IconButton(onPressed: () {}, icon: Icon(Icons.search,size: 26,)),
-            Icon(Icons.more_vert)
+            PopupMenuButton(itemBuilder: (context){
+              return[
+                PopupMenuItem(child: Text('New group')),
+                PopupMenuItem(child: Text('New broadcast')),
+                PopupMenuItem(child: Text('Link devices')),
+                PopupMenuItem(child: Text('Starred messages')),
+                PopupMenuItem(child: Text('Payments')),
+                PopupMenuItem(child: Text('Settings')),
+              ];
+            })
          ],
          bottom: TabBar(
+          labelPadding: EdgeInsets.zero,
+          isScrollable: true,
+          indicatorSize: TabBarIndicatorSize.label,
+          indicatorColor: Colors.white,
           tabs: [
-            Tab(child: Icon(Icons.camera_alt_rounded),),
-            Tab(child: Text('CHATS',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
-            Tab(child: Text('STATUS',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
-            Tab(child: Text('CALLS',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),)
+            SizedBox(
+              width: MediaQuery.of(context).size.width * .1,
+              child: Tab(child: Icon(Icons.camera_alt_rounded),)),
+            SizedBox(
+              width: MediaQuery.of(context).size.width * .3,
+              child: Tab(child: Text('CHATS',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),)),
+            SizedBox(
+              width: MediaQuery.of(context).size.width * .3,
+              child: Tab(child: Text('STATUS',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),)),
+            SizedBox(
+              width: MediaQuery.of(context).size.width * .3,
+              child: Tab(child: Text('CALLS',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),))
           ],),
         ),
         body: TabBarView(
