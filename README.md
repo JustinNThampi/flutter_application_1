@@ -43,7 +43,7 @@ samples, guidance on mobile development, and a full API reference.
   - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/Assignments/WCallsUI.dart
    ![WCalla](https://user-images.githubusercontent.com/95224442/225905991-25858f1b-e716-4c3f-918c-f39b6bb1f568.PNG)
    
-## Hotel details UI 
+# Hotel details UI 
   - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/Assignments/HotelDetailUI.dart
-  # Hostel Details UI using Stack and Bottom Navigation Bar
+  ## Hostel Details UI using Stack and Bottom Navigation Bar
   ![StackDemo](https://user-images.githubusercontent.com/95224442/228591291-3d90ba4d-9346-4294-a842-b391a706e35f.PNG)
