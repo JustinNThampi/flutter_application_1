@@ -17,7 +17,9 @@ class GridViewDemo2 extends StatelessWidget {
         body: GridView.builder(
             itemCount: 10,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3, crossAxisSpacing: 20, mainAxisSpacing: 10),
+                crossAxisCount: 2, 
+                crossAxisSpacing: 5, 
+                mainAxisSpacing: 5),
             itemBuilder: (ctx, index) {
               return Card(
                 color: Colors.green,

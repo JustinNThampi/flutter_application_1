@@ -18,10 +18,12 @@ class Grid4 extends StatelessWidget {
               crossAxisCount: 2
             ),
             childrenDelegate: SliverChildBuilderDelegate((ctx, index) {
-              return const Card(
-                child: Image(
-                  image: AssetImage("assets/image/london.jpg"),
-                ),
+              return Column(
+                children: [
+                  Card(
+                    child: Image(image: AssetImage("assets/image/london.jpg"),),
+                  ),
+                ],
               );
             },
             childCount: 10,

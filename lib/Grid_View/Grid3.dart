@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 //   ));
 // }
 
-class Grid3 extends StatelessWidget {
+class GridView3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +19,7 @@ class Grid3 extends StatelessWidget {
             return Card(
               child: Column(
                 children: [
-                  Image.asset("assets/images/DP3.jpg"),
+                  Image(image: AssetImage("assets/image/DP2.jpg")),
                   Center(child: Text("Profile Picture",))
                 ],
               ),

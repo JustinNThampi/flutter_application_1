@@ -12,8 +12,8 @@ class GridViewDemo extends StatelessWidget {
       body: GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 200,
+          crossAxisSpacing: 5,
+          mainAxisSpacing: 20,
         ),
         children: [
           Image.asset("assets/image/DP1.webp"),

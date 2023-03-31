@@ -3,13 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Assignments/ContactUI.dart';
 import 'package:flutter_application_1/ListCustom.dart';
 import 'package:flutter_application_1/ListWithSeperator.dart';
+import 'package:flutter_application_1/LottieAnimation.dart';
+import 'package:flutter_application_1/drawerr.dart';
 import 'package:flutter_application_1/stackex.dart';
+import 'Assignments/DrowerWork.dart';
+import 'Assignments/Grid_with_Card/GridViewUI.dart';
 import 'Assignments/HotelDetailUI.dart';
 import 'Grid_View/Grid.dart';
 import 'Grid_View/Grid2.dart';
+import 'Grid_View/Grid3.dart';
+import 'Grid_View/Grid4.dart';
 import 'HomeScreen.dart';
 import 'Assignments/ListUI.dart';
 import 'Login_Signup_UI/Splash.dart';
+import 'Sliverr.dart';
 import 'SplashPage.dart';
 import 'Login_Page.dart';
 import 'LoginPageWIthValidation.dart';
@@ -49,11 +56,16 @@ void main(){
       //home: ConvexBottomBar(),
       //home: GridViewDemo(),
       //home: GridViewDemo2(),
-      //home: Grid3(),
+      //home: GridView3(),
       //home: Grid4(),
       //home: Grid5(),
       //home: StaggGrid(),
-      home: HotelDetailUi(),
+      //home: HotelDetailUi(),
+      //home: Drawerr(),
+      //home: DrawerDemo(),
+      //home: LottieeEx(),
+      //home: SliverExx(),
+      home: GridViewUi(),
       debugShowCheckedModeBanner: false,
     ),
   ));
