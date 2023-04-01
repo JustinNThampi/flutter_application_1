@@ -54,4 +54,4 @@ samples, guidance on mobile development, and a full API reference.
   
 # Profile UI
   - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/Assignments/ProfileUi.dart
-  ![InShot_20230401_172052644]
+  ![InShot_20230401_172052644,height:100](https://user-images.githubusercontent.com/95224442/229287687-d8193984-7376-46b7-a6c8-13e9c4db49d2.gif)
