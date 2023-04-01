@@ -9,6 +9,7 @@ import 'package:flutter_application_1/stackex.dart';
 import 'Assignments/DrowerWork.dart';
 import 'Assignments/Grid_with_Card/GridViewUI.dart';
 import 'Assignments/HotelDetailUI.dart';
+import 'Assignments/ProfileUi.dart';
 import 'Grid_View/Grid.dart';
 import 'Grid_View/Grid2.dart';
 import 'Grid_View/Grid3.dart';
@@ -65,7 +66,8 @@ void main(){
       //home: DrawerDemo(),
       //home: LottieeEx(),
       //home: SliverExx(),
-      home: GridViewUi(),
+      //home: GridViewUi(),
+      home: ProfileUI(),
       debugShowCheckedModeBanner: false,
     ),
   ));
