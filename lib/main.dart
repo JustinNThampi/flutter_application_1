@@ -7,6 +7,7 @@ import 'package:flutter_application_1/LottieAnimation.dart';
 import 'package:flutter_application_1/drawerr.dart';
 import 'package:flutter_application_1/stackex.dart';
 import 'Assignments/DrowerWork.dart';
+import 'Assignments/GridV2.dart';
 import 'Assignments/Grid_with_Card/GridViewUI.dart';
 import 'Assignments/HotelDetailUI.dart';
 import 'Assignments/ProfileUi.dart';
@@ -67,7 +68,8 @@ void main(){
       //home: LottieeEx(),
       //home: SliverExx(),
       //home: GridViewUi(),
-      home: ProfileUI(),
+      //home: ProfileUI(),
+      home: GridView2(),
       debugShowCheckedModeBanner: false,
     ),
   ));
