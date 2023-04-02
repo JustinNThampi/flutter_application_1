@@ -49,8 +49,12 @@ samples, guidance on mobile development, and a full API reference.
   ![StackDemo](https://user-images.githubusercontent.com/95224442/228591291-3d90ba4d-9346-4294-a842-b391a706e35f.PNG)
   
 # Grid with Card
-  -Code : https://github.com/JustinNThampi/flutter_application_1/tree/master/lib/Assignments/Grid_with_Card
+  - Code : https://github.com/JustinNThampi/flutter_application_1/tree/master/lib/Assignments/Grid_with_Card
   ![GridWithCard](https://user-images.githubusercontent.com/95224442/229265982-4a75ad59-c424-48dc-9eb7-9f1af3b87abf.PNG)
+  
+# Grid UI 2
+  - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/Assignments/GridV2.dart
+![Grid2](https://user-images.githubusercontent.com/95224442/229336790-8f27fb08-c294-434c-a36d-c78bd7b1f7bf.PNG)
   
 # Profile UI
   - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/Assignments/ProfileUi.dart
