@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: SliverExx(),
-  ));
-}
+// void main() {
+//   runApp(MaterialApp(
+//     home: SliverExx(),
+//   ));
+// }
 
 class SliverExx extends StatelessWidget {
-  var color = [900,800,700, 600,500, 400, 300, 200,100, 50];
+  
+  var color = [900,800,700, 600,500, 400, 300, 200,100, 50, 900,800,700, 600,500, 400, 300, 200,100, 50];
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +16,8 @@ class SliverExx extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            floating: false,
-            pinned: true,
+            floating: true,
+            pinned: false,
             title: const Text("Custom AppBar"),
             actions: [
               IconButton(
@@ -26,13 +27,13 @@ class SliverExx extends StatelessWidget {
                   onPressed: () {},
                   icon: const Icon(Icons.favorite))
             ],
-            bottom: AppBar(
+            bottom: AppBar( 
               elevation: 0,
               title: Container(
                 height: 40,
                 width: double.infinity,
                 color: Colors.white,
-                child: const TextField(
+                child: TextField(
                   decoration: InputDecoration(
                       hintText: "Search Something",
                       prefixIcon: Icon(Icons.search),
@@ -47,7 +48,7 @@ class SliverExx extends StatelessWidget {
               child: Text(""),
               color: Colors.pink[color[index]],
             );
-          },childCount: 10))
+          },childCount: 20))
         ],
       ),
     );

@@ -5,12 +5,17 @@ import 'package:flutter_application_1/ListCustom.dart';
 import 'package:flutter_application_1/ListWithSeperator.dart';
 import 'package:flutter_application_1/LottieAnimation.dart';
 import 'package:flutter_application_1/drawerr.dart';
+import 'package:flutter_application_1/passing_data_between_screen/MainPage.dart';
+import 'package:flutter_application_1/passing_data_between_screen/productList.dart';
 import 'package:flutter_application_1/stackex.dart';
 import 'Assignments/DrowerWork.dart';
+import 'Assignments/FarmersFreshUI/FarmersFreshZone.dart';
 import 'Assignments/GridV2.dart';
 import 'Assignments/Grid_with_Card/GridViewUI.dart';
 import 'Assignments/HotelDetailUI.dart';
+import 'Assignments/MusicPlayer2.dart';
 import 'Assignments/ProfileUi.dart';
+import 'Clipwidget.dart';
 import 'Grid_View/Grid.dart';
 import 'Grid_View/Grid2.dart';
 import 'Grid_View/Grid3.dart';
@@ -29,6 +34,7 @@ import 'WhatsAppUI/WhatsAppClone.dart';
 import 'WhatsAppUI/WhatsAppStatus.dart';
 import 'bottomNavigation.dart';
 import 'convexbot.dart';
+import 'flexibleee.dart';
 import 'listWithBuilder.dart';
 
 void main(){
@@ -69,7 +75,15 @@ void main(){
       //home: SliverExx(),
       //home: GridViewUi(),
       //home: ProfileUI(),
-      home: GridView2(),
+      //home: GridView2(),
+      //home: ProductMain(),
+      //home: farmerFreshZone(),
+      //home: Flexiii(),
+      //home: Clipperrr(),
+      home: MusicPlayer(),
+      routes: {
+        'secondpage' : (context) => ProductList(),
+    },
       debugShowCheckedModeBanner: false,
     ),
   ));
