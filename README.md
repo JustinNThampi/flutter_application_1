@@ -63,4 +63,8 @@ samples, guidance on mobile development, and a full API reference.
 # Music Player 2 UI
   - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/Assignments/MusicPlayer2.dart
   ![Music player 2](https://user-images.githubusercontent.com/95224442/232308604-7f532f77-97d9-49b9-9602-c785284449cc.PNG)
+  
+# Profile Stack UI
+  - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/Assignments/ProfileStackUI.dart
+  ![StackProfileUI](https://user-images.githubusercontent.com/95224442/232478308-e86a508d-5815-461e-aecf-42fc720af0be.PNG)
 
