@@ -14,6 +14,7 @@ import 'Assignments/GridV2.dart';
 import 'Assignments/Grid_with_Card/GridViewUI.dart';
 import 'Assignments/HotelDetailUI.dart';
 import 'Assignments/MusicPlayer2.dart';
+import 'Assignments/ProfileStackUI.dart';
 import 'Assignments/ProfileUi.dart';
 import 'Clipwidget.dart';
 import 'Grid_View/Grid.dart';
@@ -80,7 +81,8 @@ void main(){
       //home: farmerFreshZone(),
       //home: Flexiii(),
       //home: Clipperrr(),
-      home: MusicPlayer(),
+      //home: MusicPlayer(),
+      home: ProfileSUI(),
       routes: {
         'secondpage' : (context) => ProductList(),
     },
