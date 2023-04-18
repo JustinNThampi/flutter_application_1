@@ -68,3 +68,7 @@ samples, guidance on mobile development, and a full API reference.
   - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/Assignments/ProfileStackUI.dart
   ![StackProfileUI](https://user-images.githubusercontent.com/95224442/232478308-e86a508d-5815-461e-aecf-42fc720af0be.PNG)
 
+# Hotel Home Page UI
+  - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/Assignments/HotelHomePageUI.dart
+  ![Hotel home](https://user-images.githubusercontent.com/95224442/232838365-2c4f36c3-a261-4e24-8770-1c9b8cdc2b73.PNG)
+
