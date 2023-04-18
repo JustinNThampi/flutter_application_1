@@ -13,6 +13,7 @@ import 'Assignments/FarmersFreshUI/FarmersFreshZone.dart';
 import 'Assignments/GridV2.dart';
 import 'Assignments/Grid_with_Card/GridViewUI.dart';
 import 'Assignments/HotelDetailUI.dart';
+import 'Assignments/HotelHomePageUI.dart';
 import 'Assignments/MusicPlayer2.dart';
 import 'Assignments/ProfileStackUI.dart';
 import 'Assignments/ProfileUi.dart';
@@ -82,7 +83,8 @@ void main(){
       //home: Flexiii(),
       //home: Clipperrr(),
       //home: MusicPlayer(),
-      home: ProfileSUI(),
+      //home: ProfileSUI(),
+      home: HotelHomePage(),
       routes: {
         'secondpage' : (context) => ProductList(),
     },
