@@ -8,6 +8,7 @@ import 'package:flutter_application_1/drawerr.dart';
 import 'package:flutter_application_1/passing_data_between_screen/MainPage.dart';
 import 'package:flutter_application_1/passing_data_between_screen/productList.dart';
 import 'package:flutter_application_1/stackex.dart';
+import 'package:flutter_application_1/stogare/SharedPref/SharedPrefEx.dart';
 import 'Assignments/DrowerWork.dart';
 import 'Assignments/FarmersFreshUI/FarmersFreshZone.dart';
 import 'Assignments/GridV2.dart';
@@ -38,6 +39,7 @@ import 'bottomNavigation.dart';
 import 'convexbot.dart';
 import 'flexibleee.dart';
 import 'listWithBuilder.dart';
+import 'my map/mapex.dart';
 
 void main(){
   runApp(DevicePreview(
@@ -79,12 +81,14 @@ void main(){
       //home: ProfileUI(),
       //home: GridView2(),
       //home: ProductMain(),
-      //home: farmerFreshZone(),
+      home: farmerFreshZone(),
       //home: Flexiii(),
       //home: Clipperrr(),
       //home: MusicPlayer(),
       //home: ProfileSUI(),
-      home: HotelHomePage(),
+      //home: HotelHomePage(),
+      //home: MapSample(),
+      //home: LoginSamp(),
       routes: {
         'secondpage' : (context) => ProductList(),
     },
