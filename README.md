@@ -71,4 +71,8 @@ samples, guidance on mobile development, and a full API reference.
 # Hotel Home Page UI
   - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/Assignments/HotelHomePageUI.dart
   ![Hotel home](https://user-images.githubusercontent.com/95224442/232838365-2c4f36c3-a261-4e24-8770-1c9b8cdc2b73.PNG)
+  
+# Farmers Fresh Zone UI
+  - Code https://github.com/JustinNThampi/flutter_application_1/tree/master/lib/Assignments/FarmersFreshUI
+  ![FarmersFreshZone](https://user-images.githubusercontent.com/95224442/235066929-2a49d33c-db50-4652-b661-3f0f3c56b8c8.gif)
 
