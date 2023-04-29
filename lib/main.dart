@@ -15,6 +15,7 @@ import 'Assignments/GridV2.dart';
 import 'Assignments/Grid_with_Card/GridViewUI.dart';
 import 'Assignments/HotelDetailUI.dart';
 import 'Assignments/HotelHomePageUI.dart';
+import 'Assignments/LoginSignupShrPrf/Login.dart';
 import 'Assignments/MusicPlayer2.dart';
 import 'Assignments/ProfileStackUI.dart';
 import 'Assignments/ProfileUi.dart';
@@ -81,7 +82,7 @@ void main(){
       //home: ProfileUI(),
       //home: GridView2(),
       //home: ProductMain(),
-      home: farmerFreshZone(),
+      //home: farmerFreshZone(),
       //home: Flexiii(),
       //home: Clipperrr(),
       //home: MusicPlayer(),
@@ -89,6 +90,7 @@ void main(){
       //home: HotelHomePage(),
       //home: MapSample(),
       //home: LoginSamp(),
+      home: SPLogin(),
       routes: {
         'secondpage' : (context) => ProductList(),
     },
