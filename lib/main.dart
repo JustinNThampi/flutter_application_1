@@ -1,5 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Assignments/BankAppUI.dart';
 import 'package:flutter_application_1/Assignments/ContactUI.dart';
 import 'package:flutter_application_1/ListCustom.dart';
 import 'package:flutter_application_1/ListWithSeperator.dart';
@@ -90,7 +91,8 @@ void main(){
       //home: HotelHomePage(),
       //home: MapSample(),
       //home: LoginSamp(),
-      home: SPLogin(),
+      //home: SPLogin(),
+      home: BankApp(),
       routes: {
         'secondpage' : (context) => ProductList(),
     },
