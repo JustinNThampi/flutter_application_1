@@ -73,12 +73,15 @@ samples, guidance on mobile development, and a full API reference.
   ![Hotel home](https://user-images.githubusercontent.com/95224442/232838365-2c4f36c3-a261-4e24-8770-1c9b8cdc2b73.PNG)
   
 # Farmers Fresh Zone UI
-  - Code https://github.com/JustinNThampi/flutter_application_1/tree/master/lib/Assignments/FarmersFreshUI
+  - Code : https://github.com/JustinNThampi/flutter_application_1/tree/master/lib/Assignments/FarmersFreshUI
   ![FarmersFreshZone](https://user-images.githubusercontent.com/95224442/235066929-2a49d33c-db50-4652-b661-3f0f3c56b8c8.gif)
   
 # Login and SignUp using Shared Preferance
-  - Code https://github.com/JustinNThampi/flutter_application_1/tree/master/lib/Assignments/LoginSignupShrPrf
+  - Code : https://github.com/JustinNThampi/flutter_application_1/tree/master/lib/Assignments/LoginSignupShrPrf
   ![SharedPreferenceLogin1](https://user-images.githubusercontent.com/95224442/235319267-188f1833-c9af-4639-929f-9006a5cb9e20.PNG)![SharedPreferenceLogin1 2](https://user-images.githubusercontent.com/95224442/235319280-7c83f350-6856-4de0-bc94-037694d28c5d.PNG)![SharedPreferenceSignup1](https://user-images.githubusercontent.com/95224442/235319308-5925b91b-9211-4e56-bdc1-5e433f42eacb.PNG)![SharedPreferenceSignup1 2](https://user-images.githubusercontent.com/95224442/235319320-48e7f960-753b-4350-9fdf-7322cbc217f8.PNG)
-
+  
+# Bank App UI
+  - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/Assignments/BankAppUI.dart
+  ![BankApp](https://user-images.githubusercontent.com/95224442/235429984-30e58283-fec3-41ad-ad8a-a72f5ab994bc.PNG)
 
 
