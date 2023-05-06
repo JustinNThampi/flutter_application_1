@@ -83,5 +83,12 @@ samples, guidance on mobile development, and a full API reference.
 # Bank App UI
   - Code : https://github.com/JustinNThampi/flutter_application_1/blob/master/lib/Assignments/BankAppUI.dart
   ![BankApp](https://user-images.githubusercontent.com/95224442/235429984-30e58283-fec3-41ad-ad8a-a72f5ab994bc.PNG)
+  
+# UI By Company (Assignment)
+  - Code : https://github.com/JustinNThampi/flutter_application_1/tree/master/lib/Assignments/Company%20UI
+  ![Invoice](https://user-images.githubusercontent.com/95224442/236611864-aa7b8a3f-9d41-4666-8dd8-0ea07ec1b674.JPG)![Date](https://user-images.githubusercontent.com/95224442/236611876-4b760ab4-dd0b-4828-b987-c13ebd06a6f3.PNG)![Rewrds](https://user-images.githubusercontent.com/95224442/236611885-e85febc9-05b6-48ba-830e-a8bf5ba9ea1f.JPG)![Profile](https://user-images.githubusercontent.com/95224442/236611893-f4da56dc-f838-4e28-8f9f-d6e1cd5c5bd3.JPG)
+
+
+
 
 
