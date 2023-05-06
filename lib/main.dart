@@ -1,49 +1,20 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Assignments/BankAppUI.dart';
-import 'package:flutter_application_1/Assignments/ContactUI.dart';
-import 'package:flutter_application_1/ListCustom.dart';
-import 'package:flutter_application_1/ListWithSeperator.dart';
-import 'package:flutter_application_1/LottieAnimation.dart';
-import 'package:flutter_application_1/drawerr.dart';
-import 'package:flutter_application_1/passing_data_between_screen/MainPage.dart';
-import 'package:flutter_application_1/passing_data_between_screen/productList.dart';
-import 'package:flutter_application_1/stackex.dart';
-import 'package:flutter_application_1/stogare/SharedPref/SharedPrefEx.dart';
-import 'Assignments/DrowerWork.dart';
-import 'Assignments/FarmersFreshUI/FarmersFreshZone.dart';
-import 'Assignments/GridV2.dart';
-import 'Assignments/Grid_with_Card/GridViewUI.dart';
-import 'Assignments/HotelDetailUI.dart';
-import 'Assignments/HotelHomePageUI.dart';
-import 'Assignments/LoginSignupShrPrf/Login.dart';
-import 'Assignments/MusicPlayer2.dart';
-import 'Assignments/ProfileStackUI.dart';
-import 'Assignments/ProfileUi.dart';
-import 'Clipwidget.dart';
-import 'Grid_View/Grid.dart';
-import 'Grid_View/Grid2.dart';
-import 'Grid_View/Grid3.dart';
-import 'Grid_View/Grid4.dart';
-import 'HomeScreen.dart';
-import 'Assignments/ListUI.dart';
-import 'Login_Signup_UI/Splash.dart';
-import 'Sliverr.dart';
-import 'SplashPage.dart';
-import 'Login_Page.dart';
-import 'LoginPageWIthValidation.dart';
-import 'Grid_View/StagGrid.dart';
-import 'TabBar.dart';
-import 'WhatsAppUI/WhatsAppChat.dart';
-import 'WhatsAppUI/WhatsAppClone.dart';
-import 'WhatsAppUI/WhatsAppStatus.dart';
-import 'bottomNavigation.dart';
-import 'convexbot.dart';
-import 'flexibleee.dart';
-import 'listWithBuilder.dart';
-import 'my map/mapex.dart';
+import 'package:flutter_application_1/Assignments/Company%20UI/InvoiceDatePage.dart';
+import 'package:flutter_application_1/stogare/Hive/todo.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/adapters.dart';
+import 'Assignments/Company UI/BottomBarPage.dart';
+import 'Assignments/Company UI/InvoiceNumberPage.dart';
+import 'Assignments/Company UI/RewardListPage.dart';
+import 'Assignments/Company UI/RewardWalletPage.dart';
 
-void main(){
+void main() async{
+  
+  WidgetsFlutterBinding.ensureInitialized();
+  await Hive.initFlutter();
+  await Hive.openBox('task_box');
+
   runApp(DevicePreview(
     builder: (BuildContext context) => MaterialApp(
       useInheritedMediaQuery: true,
@@ -92,10 +63,17 @@ void main(){
       //home: MapSample(),
       //home: LoginSamp(),
       //home: SPLogin(),
-      home: BankApp(),
-      routes: {
-        'secondpage' : (context) => ProductList(),
-    },
+      //home: BankApp(),
+      //home: Account(),
+      //home: RewardWallet(),
+      //home: RewardList(),
+      home: BottomBar(),
+      //home: InvoiceNumber(),
+      //home: InvoiceDate(),
+      //home: MyTODo(),
+      // routes: {
+      //   'secondpage' : (context) => ProductList(),
+      // },
       debugShowCheckedModeBanner: false,
     ),
   ));
